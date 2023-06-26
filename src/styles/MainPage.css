@@ -1,0 +1,63 @@
+div.AppMainPageContent {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+div.AppMainPageBanner {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding: 3%;
+}
+
+div.AppMainPageLeftContentBox {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    padding: 3%;
+}
+
+div.AppMainPageCenterContentBox {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 3%;
+}
+
+div.AppMainPageRightContentBox {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    padding: 3%;
+}
+
+div.AppMainPageAlignHelper  {
+    display: block;
+}
+
+ul.AppMainPageContactsList {
+    text-decoration: unset;
+    align-items: center;
+}
+
+ul.AppMainPageContactsList > li {
+    align-items: center;
+    display: flex;
+}
+
+@media screen and (max-width: 800px) {
+    
+    div.AppMainPageBanner {
+        justify-content: center;
+    }
+
+    div.AppMainPageRightContentBox,
+    div.AppMainPageLeftContentBox {
+        justify-content: center;
+    }
+}
