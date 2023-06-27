@@ -1,3 +1,6 @@
+import ProjectCard from "../components/ProjectCard";
+import { projects } from "../data/Projects";
+
 import "../styles/MainPage.css";
 
 export default function ProjectsPage () {
@@ -10,9 +13,16 @@ export default function ProjectsPage () {
                 </div>
             </div>
             <div className="AppMainPageCenterContentBox">
-                <h1>
-                    In progress...
-                </h1>
+                {
+                    projects.map((project, index) => 
+                        <ProjectCard 
+                            projectId={index}
+                            projectPreview={require("../images/" + project.preview)}
+                            projectTitle={project.name}
+                            projectShortDescription={project.shortDescription}
+                        />
+                    )     
+                }
             </div>
         </div>
     )

@@ -7,6 +7,7 @@ import hamburgerIcon from "../icons/hamburger.svg";
 import "../styles/Header.css";
 
 export default function Header () {
+    console.log(hamburgerIcon)
 
     const [isActive, setActive] = useState(false);
 

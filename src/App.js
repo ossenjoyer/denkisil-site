@@ -6,6 +6,7 @@ import CVPage from './pages/CVPage';
 import NotFoundPage from './pages/NotFoundPage';
 import ProjectsPage from './pages/ProjectsPage';
 import SupportPage from './pages/SupportPage';
+import ProjectPage from './pages/ProjectPage';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/resume" element={<CVPage />}/>
             <Route path="/projects" element={<ProjectsPage />}/>
             <Route path="/support" element={<SupportPage />}/>
+            <Route path="/project/:projectId" element={<ProjectPage />}/>
           </Routes>
       </BrowserRouter>
     </div>

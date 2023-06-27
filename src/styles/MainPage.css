@@ -37,10 +37,24 @@ div.AppMainPageRightContentBox {
 }
 
 div.AppMainPageAlignHelper  {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(100% / 3);
+    padding: 3%;
+}
+
+div.AppMainPageAlignHelperAll {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 100%;
+    padding: 3%;
 }
 
 ul.AppMainPageContactsList {
+    display: flex;
+    flex-direction: column;
     text-decoration: unset;
     align-items: center;
 }
@@ -59,5 +73,10 @@ ul.AppMainPageContactsList > li {
     div.AppMainPageRightContentBox,
     div.AppMainPageLeftContentBox {
         justify-content: center;
+    }
+
+    div.AppMainPageAlignHelper {
+        width: 80%;
+        padding: 7%;
     }
 }
