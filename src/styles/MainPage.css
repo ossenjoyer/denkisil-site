@@ -64,6 +64,11 @@ ul.AppMainPageContactsList > li {
     display: flex;
 }
 
+.AppMainPageProjectPreview {
+    height: 60%;
+    width: 60%;
+}
+
 @media screen and (max-width: 800px) {
     
     div.AppMainPageBanner {
@@ -78,5 +83,10 @@ ul.AppMainPageContactsList > li {
     div.AppMainPageAlignHelper {
         width: 80%;
         padding: 7%;
+    }
+
+    .AppMainPageProjectPreview {
+        width: 80%;
+        height: 80%;
     }
 }

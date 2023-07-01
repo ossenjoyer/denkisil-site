@@ -2,55 +2,57 @@ import { Link, useParams } from "react-router-dom";
 import { projects } from "../data/Projects";
 
 import "../styles/MainPage.css";
+import { useTranslation } from "react-i18next";
 
-export default function ProjectPage ({ match }) {
-    const { projectId } = useParams();
+export default function ProjectPage({ match }) {
+  const { projectId } = useParams();
+  const { i18n } = useTranslation();
 
-    const project = projects[projectId];
+  const project = projects[i18n.language][projectId];
 
-    if (project) {
-        return (
-            <div className="AppMainPageContent">
-                <div className="AppMainPageLeftContentBox">
-                    <div className="AppMainPageAlignHelperAll">
-                        <img 
-                            alt="Project preview"
-                            src={require("../images/" + project.preview)}
-                            height={`60%`}
-                            width={`60%`}
-                        />
-                        <h1>
-                            {project.name}
-                        </h1>
-                        <p>
-                            <Link to={project.link}>
-                                Visit website
-                            </Link>
-                        </p>
-                        <p>
-                            {project.longDescription}
-                        </p>
-                    </div>
-                </div>
-            </div>
-        )
-    } else {
-        return (
-            <div className="AppMainPageContent">
-                <div className="AppMainPageLeftContentBox">
-                    <div className="AppMainPageAlignHelperAll">
-                        <h1>
-                            Sorry, cant find project
-                        </h1>
-                        <p>
-                            You can visit <Link to="/projects">projects</Link> page to find the project you need
-                        </p>
-                        <p>
-                            Or you can return to the <Link to="/">main</Link>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+  if (project) {
+    return (
+      <div className="AppMainPageContent">
+        <div className="AppMainPageLeftContentBox">
+          <div className="AppMainPageAlignHelperAll">
+            <h3>
+              <Link to={`/projects`}>⟨ {i18n.t("ProjectPage.BackTo")}</Link>
+            </h3>
+            <img
+              alt="Project preview"
+              src={require("../images/" + project.preview)}
+              className="AppMainPageProjectPreview"
+            />
+            <h1>{project.name}</h1>
+            <p>
+              <Link to={project.link}>{i18n.t("ProjectPage.VisitPage")}</Link>
+            </p>
+            <p>{project.longDescription}</p>
+          </div>
+        </div>
+      </div>
+    );
+  } else {
+    return (
+      <div className="AppMainPageContent">
+        <div className="AppMainPageLeftContentBox">
+          <div className="AppMainPageAlignHelperAll">
+            <h1>{i18n.t("ProjectPage.ProjectNotFound.Title")}</h1>
+            <p>
+              {i18n.t("ProjectPage.ProjectNotFound.BackToProjects.0")}
+              <Link to="/projects">
+                {i18n.t("ProjectPage.ProjectNotFound.BackToProjects.1")}
+              </Link>
+            </p>
+            <p>
+              {i18n.t("ProjectPage.ProjectNotFound.BackToMain.0")}
+              <Link to="/">
+                {i18n.t("ProjectPage.ProjectNotFound.BackToMain.1")}
+              </Link>
+            </p>
+          </div>
+        </div>
+      </div>
+    );
+  }
 }

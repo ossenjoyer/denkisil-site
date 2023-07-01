@@ -1,0 +1,12 @@
+div.OnLoadMain {
+  display: flex;
+  padding-top: 22.5%;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  div.OnLoadMain {
+    padding-top: 70%;
+  }
+}

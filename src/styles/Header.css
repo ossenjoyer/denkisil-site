@@ -1,100 +1,107 @@
 div.AppHeader {
-    width:100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    user-select: none;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  user-select: none;
 }
 
 div.AppLogoBlock {
-    cursor: default;
-    display: inline-block;
-    margin-left: 5%;
+  cursor: default;
+  display: inline-block;
+  margin-left: 5%;
 }
 
 h1.AppLogo {
-    font-weight: 100;
+  font-weight: 100;
 }
 
 div.AppHeaderLinksBlock {
-    align-items: center;
-    width: 40%;
-    display: flex;
-    justify-content: right;
+  align-items: center;
+  width: 40%;
+  display: flex;
+  justify-content: right;
 }
 
 div.AppHamburgerMenu {
-    display: flex;
-    justify-content: center;
-    width: 12%;
-    margin-right: 10%;
-    visibility: hidden;
+  display: flex;
+  justify-content: center;
+  width: 12%;
+  margin-right: 10%;
+  visibility: hidden;
 }
 
 div.AppHamburgerMenu > p {
-    cursor: default;
+  cursor: default;
 }
 
 ul.AppHeaderLinks {
-    width: 80%;
-    margin-right: 8%;
-    list-style: none;
-    display: flex;
-    justify-content: right;
+  width: 80%;
+  margin-right: 8%;
+  list-style: none;
+  display: flex;
+  justify-content: right;
 }
 
 .AppHeaderLink {
-    display: inline-block;
-    padding: 5%;
-    margin-right: 8%;
+  display: inline-block;
+  padding: 5%;
+  margin-right: 8%;
 }
 
 li.AppHeaderLink > a {
-    height: 100%;
-    width: 100%;
-    color: unset;
-    text-decoration: none;
+  height: 100%;
+  width: 100%;
+  color: unset;
+  text-decoration: none;
+}
+
+.AppHeaderBlock {
+  display: inline-block;
+  padding: 5%;
 }
 
 .AppHeaderLink:hover {
-    background: black;
-    color: white;
+  background: black;
+  color: white;
 }
 
 @media screen and (max-width: 800px) {
+  div.AppHeader {
+    flex-wrap: wrap;
+  }
 
-    div.AppHeader {
-        flex-wrap: wrap;
-    }
+  div.AppLogoBlock {
+    flex: 50%;
+  }
 
-    div.AppLogoBlock {
-        flex: 50%;
-    }
+  div.AppHamburgerMenu {
+    visibility: visible;
+  }
 
-    div.AppHamburgerMenu {
-        visibility: visible;
-    }
+  div.AppHeaderLinksBlock {
+    justify-content: left;
+    align-items: unset;
+    left: 0%;
+    width: 100%;
+    flex-flow: row wrap;
+  }
 
-    div.AppHeaderLinksBlock {
-        justify-content: left;
-        align-items: unset;
-        left: 0%;
-        width: 100%;
-        flex-flow: row wrap;
-    }
+  ul.AppHeaderLinks {
+    display: flex;
+    align-items: unset;
+    justify-content: left;
+    left: 0%;
+    display: block;
+  }
 
-    ul.AppHeaderLinks {
-        display: flex;
-        align-items: unset;
-        justify-content: left;
-        left: 0%;
-        display: block;
-    }
+  .AppHeaderLink {
+    margin-left: 0%;
+    display: block;
+    width: 100%;
+  }
 
-    .AppHeaderLink {
-        margin-left: 0%;
-        display: block;
-        width: 100%;
-    }
+  .AppHeaderBlock {
+    display: block;
+  }
 }
-

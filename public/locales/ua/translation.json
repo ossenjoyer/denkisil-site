@@ -1,0 +1,132 @@
+{
+  "Header": {
+    "Links": {
+      "Projects": "Проєкти",
+      "CV": "Автобіографія",
+      "Support": "Підтримати"
+    }
+  },
+  "MainPage": {
+    "WelcomeBanner": {
+      "Title": "Вітаю вас на моєму вебсайті",
+      "Introduction": "Я Denkisil - розробник-початківець; майбутній Backend Developer"
+    },
+    "AboutMeBanner": {
+      "Title": "Трохи про себе",
+      "List": {
+        "0": "Народився в Україні",
+        "1": "Почав програмувати з 13 років",
+        "2": "Ненавиджу JavaSсript, але працюю з ним :/",
+        "3": "Люблю слухати електрону музику"
+      }
+    },
+    "MyContactsBanner": {
+      "Title": "Ти можеш зв'язатись зі мною за допомогою:"
+    }
+  },
+  "ProjectsPage": {
+    "WelcomeBanner": {
+      "Title": "Мої проєкти",
+      "Introduction": "Тут ти можеш дізнатись які проєкти я розробив та оцінити мої навички"
+    },
+    "Projects": "ua"
+  },
+  "ProjectPage": {
+    "BackTo": "Повернутись до всіх проєктів",
+    "VisitPage": "Відвідати сторінку проєкту",
+    "ProjectNotFound": {
+      "Title": "Вибачте, але такого проєкту немає",
+      "BackToProjects": {
+        "0": "Ти можеш віднайти потрібний проєкт на сторінці ",
+        "1": "проєктів"
+      },
+      "BackToMain": {
+        "0": "Або просто поверніться на ",
+        "1": "Головну"
+      }
+    }
+  },
+  "CVPage": {
+    "CV": {
+      "Title": "Автобіографія"
+    },
+    "Resume": {
+      "Title": "Резюме"
+    },
+    "Projects": {
+      "Title": "Портфоліо",
+      "Introduction": {
+        "0": "Моє портфоліо розміщено на сторінці ",
+        "1": "проєктів"
+      }
+    }
+  },
+  "SupportPage": {
+    "WelcomeBanner": {
+      "Title": "Як ти можеш мені допомогти",
+      "Introduction": "Не хвилюйся, платити мені необов'язково (хоча це вітається ;) ). У мене є інші варіанти для тебе"
+    },
+    "UkrainianCharities": {
+      "Title": "Найважливішою допомогою для мене буде підтримка моєї Батьківщини у такий скрутний час",
+      "Introduction": "Тут розміщені найважливіші, на мою думку, фундації та організації",
+      "Charities": {
+        "Goverment": {
+          "Title": "Урядові програми",
+          "List": {
+            "0": {
+              "Name": "United 24",
+              "Link": "https://u24.gov.ua"
+            },
+            "1": {
+              "Name": "НБУ (Гуманітарна допомога)",
+              "Link": "https://bank.gov.ua/ua/about/humanitarian-aid-to-ukraine"
+            },
+            "2": {
+              "Name": "НБУ (Допомога ЗСУ)",
+              "Link": "https://bank.gov.ua/ua/about/support-the-armed-forces/"
+            }
+          }
+        },
+        "Civilian": {
+          "Title": "Неприбуткові організації та об'єднання",
+          "List": {
+            "0": {
+              "Name": "Товариство Червоного Хреста України",
+              "Link": "https://redcross.org.ua/"
+            },
+            "1": {
+              "Name": "БО \"Повернись живим\"",
+              "Link": "https://savelife.in.ua/"
+            }
+          }
+        }
+      }
+    },
+    "FeedrumProject": {
+      "Title": "Про Feedrum Project",
+      "Introduction": "Ти також можеш підтримати мене, допомігши з Feedrum Project",
+      "List": {
+        "0": {
+          "Name": "Просто зайди і заціни це!",
+          "Link": "https://feedrum.com"
+        },
+        "1": {
+          "Name": "Можеш внести свій внесок у розвиток проєкту",
+          "Link": "https://github.com/Feedrum-Project"
+        }
+      }
+    }
+  },
+  "NotFoundPage": {
+    "WelcomeBanner": {
+      "Title": "Сторінку не знайдено",
+      "Introduction": {
+        "0": "Можете повернутись на",
+        "1": "Головну"
+      }
+    }
+  },
+  "Caps": {
+    "InProgress": "У процесі..."
+  }
+}

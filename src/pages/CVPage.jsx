@@ -1,39 +1,35 @@
 import { Link } from "react-router-dom";
 import "../styles/MainPage.css";
+import { useTranslation } from "react-i18next";
 
-export default function CVPage () {
-   return ( 
-        <div className="AppMainPageContent">
-            <div className="AppMainPageLeftContentBox">
-                <div className="AppMainPageAlignHelper">
-                    <h1>
-                        My CV
-                    </h1>
-                    <p>
-                        In progress...
-                    </p>
-                </div>
-            </div>
-            <div className="AppMainPageLeftContentBox">
-                <div className="AppMainPageAlignHelper">
-                    <h1>
-                        My Resume
-                    </h1>
-                    <p>
-                        In progress...
-                    </p>
-                </div>
-            </div>
-            <div className="AppMainPageLeftContentBox">
-                <div className="AppMainPageAlignHelper">
-                    <h1>
-                        My Portfolio
-                    </h1>
-                    <p>
-                        You can see on <Link to={`/projects`}>Projects</Link> page
-                    </p>
-                </div>
-            </div>
-        </div>  
-    )
+export default function CVPage() {
+  const { i18n } = useTranslation();
+
+  return (
+    <div className="AppMainPageContent">
+      <div className="AppMainPageLeftContentBox">
+        <div className="AppMainPageAlignHelper">
+          <h1>{i18n.t("CVPage.CV.Title")}</h1>
+          <p>{i18n.t("Caps.InProgress")}</p>
+        </div>
+      </div>
+      <div className="AppMainPageLeftContentBox">
+        <div className="AppMainPageAlignHelper">
+          <h1>{i18n.t("CVPage.Resume.Title")}</h1>
+          <p>{i18n.t("Caps.InProgress")}</p>
+        </div>
+      </div>
+      <div className="AppMainPageLeftContentBox">
+        <div className="AppMainPageAlignHelper">
+          <h1>{i18n.t("CVPage.Projects.Title")}</h1>
+          <p>
+            {i18n.t("CVPage.Projects.Introduction.0")}
+            <Link to={`/projects`}>
+              {i18n.t("CVPage.Projects.Introduction.1")}
+            </Link>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }

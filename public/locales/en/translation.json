@@ -1,0 +1,132 @@
+{
+  "Header": {
+    "Links": {
+      "Projects": "Projects",
+      "CV": "CV",
+      "Support": "Support"
+    }
+  },
+  "MainPage": {
+    "WelcomeBanner": {
+      "Title": "Welcome to my website",
+      "Introduction": "I'm Denkisil - a budding developer; an upcoming Backend Developer"
+    },
+    "AboutMeBanner": {
+      "Title": "A little bit about me",
+      "List": {
+        "0": "Born in Ukraine",
+        "1": "Started programming at the age of 13",
+        "2": "I hate JavaScript, but I work with it :/",
+        "3": "I like to listen to electronic music"
+      }
+    },
+    "MyContactsBanner": {
+      "Title": "You can reach me by:"
+    }
+  },
+  "ProjectsPage": {
+    "WelcomeBanner": {
+      "Title": "My Projects",
+      "Introduction": "Here you can find out what projects I have developed and evaluate my skills."
+    },
+    "Projects": "en"
+  },
+  "ProjectPage": {
+    "BackTo": "Return to all projects",
+    "VisitPage": "Visit the project page",
+    "ProjectNotFound": {
+      "Title": "Sorry, there is no such project",
+      "BackToProjects": {
+        "0": "You can find the project you are looking for on the ",
+        "1": "projects page"
+      },
+      "BackToMain": {
+        "0": "Or go back to ",
+        "1": "Main page"
+      }
+    }
+  },
+  "CVPage": {
+    "CV": {
+      "Title": "CV"
+    },
+    "Resume": {
+      "Title": "Resume"
+    },
+    "Projects": {
+      "Title": "Портфоліо",
+      "Introduction": {
+        "0": "My portfolio is posted on the ",
+        "1": "projects page"
+      }
+    }
+  },
+  "SupportPage": {
+    "WelcomeBanner": {
+      "Title": "How you can help me",
+      "Introduction": "Don't worry, you don't have to pay me (although it's welcome ;) ). I have other options for you."
+    },
+    "UkrainianCharities": {
+      "Title": "The most important help for me will be the support of my homeland in such a difficult time.",
+      "Introduction": "Here are the most important foundations and organizations in my opinion.",
+      "Charities": {
+        "Goverment": {
+          "Title": "Ukrainian goverment programs",
+          "List": {
+            "0": {
+              "Name": "United 24",
+              "Link": "https://u24.gov.ua"
+            },
+            "1": {
+              "Name": "NBU (Humanitarian Aid)",
+              "Link": "https://bank.gov.ua/en/about/humanitarian-aid-to-ukraine"
+            },
+            "2": {
+              "Name": "NBU (Support for AFU)",
+              "Link": "https://bank.gov.ua/en/about/support-the-armed-forces/"
+            }
+          }
+        },
+        "Civilian": {
+          "Title": "Nonprofit organizations and associations",
+          "List": {
+            "0": {
+              "Name": "Ukrainian Red Cross Society",
+              "Link": "https://redcross.org.ua/en"
+            },
+            "1": {
+              "Name": "Come Back Alive",
+              "Link": "https://savelife.in.ua/en"
+            }
+          }
+        }
+      }
+    },
+    "FeedrumProject": {
+      "Title": "About Feedrum Project",
+      "Introduction": "You can also support me by helping with the Feedrum Project.",
+      "List": {
+        "0": {
+          "Name": "Just come on over and check it out!",
+          "Link": "https://feedrum.com"
+        },
+        "1": {
+          "Name": "You can contribute to the development of the project",
+          "Link": "https://github.com/Feedrum-Project"
+        }
+      }
+    }
+  },
+  "NotFoundPage": {
+    "WelcomeBanner": {
+      "Title": "Page not found",
+      "Introduction": {
+        "0": "You can turn back to",
+        "1": "Main page"
+      }
+    }
+  },
+  "Caps": {
+    "InProgress": "In progress..."
+  }
+}

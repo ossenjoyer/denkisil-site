@@ -1,62 +1,50 @@
 import telegramIcon from "../icons/telegram.svg";
 import githubIcon from "../icons/github.svg";
 import "../styles/MainPage.css";
+import { useTranslation } from "react-i18next";
 
-export default function MainPage () {
+export default function MainPage() {
+  const { i18n } = useTranslation();
 
-    return (
-        <div className="AppMainPageContent">
-            <div className="AppMainPageBanner">
-                <div className="AppMainPageAlignHelper">
-                    <h1>
-                        Welcome to my website
-                    </h1>
+  return (
+    <div className="AppMainPageContent">
+      <div className="AppMainPageBanner">
+        <div className="AppMainPageAlignHelper">
+          <h1>{i18n.t("MainPage.WelcomeBanner.Title")}</h1>
 
-                    <p>
-                        I'm DenKisil - TypeScript backend developer.
-                    </p>
-                </div>
-            </div>
-
-            <div className="AppMainPageRightContentBox">
-                <div className="AppMainPageAlignHelper">
-                    <h1>
-                        Some facts about me
-                    </h1>
-                    
-                    <ul>
-                        <li>Born in Ukraine</li>
-                        <li>I started programming when I was 13</li>
-                        <li>I hate JavaScript, even though I write in it</li>
-                        <li>I love listening to electronic music</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div className="AppMainPageLeftContentBox">
-                <div className="AppMainPageAlignHelper">
-                    <h1>
-                        Here my contacts
-                    </h1>
-                    <ul className="AppMainPageContactsList">
-                        <li>
-                            <img
-                                alt="Telegram"
-                                src={telegramIcon}
-                            /> 
-                            <a href="https://t.me/denkisil">@denkisil</a>
-                        </li>
-                        <li>
-                            <img 
-                                alt="GitHub"
-                                src={githubIcon}
-                            />
-                            <a href="https://github.com/denkisil">denkisil</a>
-                        </li>
-                        <li></li>
-                    </ul>
-                </div>
-            </div>
+          <p>{i18n.t("MainPage.WelcomeBanner.Introduction")}</p>
         </div>
-    )
+      </div>
+
+      <div className="AppMainPageRightContentBox">
+        <div className="AppMainPageAlignHelper">
+          <h1>{i18n.t("MainPage.AboutMeBanner.Title")}</h1>
+
+          <ul>
+            <li>{i18n.t("MainPage.AboutMeBanner.List.0")}e</li>
+            <li>{i18n.t("MainPage.AboutMeBanner.List.1")}</li>
+            <li>{i18n.t("MainPage.AboutMeBanner.List.2")}</li>
+            <li>{i18n.t("MainPage.AboutMeBanner.List.3")}</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="AppMainPageLeftContentBox">
+        <div className="AppMainPageAlignHelper">
+          <h1>{i18n.t("MainPage.MyContactsBanner.Title")}</h1>
+          <ul className="AppMainPageContactsList">
+            <li>
+              <img alt="Telegram" src={telegramIcon} />
+              <a href="https://t.me/denkisil">@denkisil</a>
+            </li>
+            <li>
+              <img alt="GitHub" src={githubIcon} />
+              <a href="https://github.com/denkisil">denkisil</a>
+            </li>
+            <li></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  );
 }
