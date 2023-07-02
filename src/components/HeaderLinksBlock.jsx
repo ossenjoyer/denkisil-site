@@ -1,8 +1,18 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { useSelector, useDispatch } from "react-redux";
+import { darkTheme, ligthTheme } from "../store/themeSlice";
 
 export default function HeaderLinksBlock() {
   const { i18n } = useTranslation();
+  const theme = useSelector((state) => state.style.theme);
+  console.log(theme);
+  const dispatch = useDispatch();
+
+  function changeTheme() {
+    if (theme === "ligth") return dispatch(darkTheme());
+    else if (theme === "dark") return dispatch(ligthTheme());
+  }
 
   return (
     <div className="AppHeaderLinksBlock">
@@ -16,6 +26,9 @@ export default function HeaderLinksBlock() {
         <Link to={`/support`} className="AppHeaderLink">
           {i18n.t("Header.Links.Support")}
         </Link>
+        <a href="#" className="AppHeaderLink" onClick={() => changeTheme()}>
+          {i18n.t("Header.Links.ChangeTheme")}
+        </a>
         <div className="AppHeaderBlock">
           <select
             value={i18n.language}

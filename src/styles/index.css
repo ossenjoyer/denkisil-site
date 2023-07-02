@@ -25,6 +25,17 @@ li::marker {
 }
 
 a {
-  color: orangered;
+  color: rgb(195, 88, 50);
   text-decoration: unset;
+}
+
+select {
+  color: rgb(195, 88, 50);
+  background: unset;
+  border: unset;
+}
+
+select > option {
+  background: unset;
+  border: unset;
 }

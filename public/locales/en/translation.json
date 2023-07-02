@@ -3,7 +3,8 @@
     "Links": {
       "Projects": "Projects",
       "CV": "CV",
-      "Support": "Support"
+      "Support": "Support",
+      "ChangeTheme": "Change theme"
     }
   },
   "MainPage": {
@@ -54,7 +55,7 @@
       "Title": "Resume"
     },
     "Projects": {
-      "Title": "Портфоліо",
+      "Title": "Portfolio",
       "Introduction": {
         "0": "My portfolio is posted on the ",
         "1": "projects page"

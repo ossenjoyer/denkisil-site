@@ -3,12 +3,15 @@ import { useState } from "react";
 
 import HeaderLinksBlock from "./HeaderLinksBlock";
 
-import hamburgerIcon from "../icons/hamburger.svg";
+import hamburgerDarkIcon from "../icons/hamburger-dark.svg";
+import hamburgerLigthIcon from "../icons/hamburger-ligth.svg";
 import "../styles/Header.css";
+import { useSelector } from "react-redux";
 
 export default function Header() {
   const [isActive, setActive] = useState(false);
-  // const { i18n } = useTranslation("common");
+
+  const theme = useSelector((state) => state.style.theme);
 
   const isMobileDevice = window.matchMedia("(max-width: 800px)").matches;
 
@@ -20,7 +23,16 @@ export default function Header() {
         </h1>
       </div>
       <div className="AppHamburgerMenu" onClick={() => setActive((pr) => !pr)}>
-        <img alt="Menu" src={hamburgerIcon} />
+        <img
+          src={
+            theme === "ligth"
+              ? hamburgerLigthIcon
+              : theme === "dark"
+              ? hamburgerDarkIcon
+              : null
+          }
+          alt="Menu"
+        />
       </div>
       {isActive ? (
         <HeaderLinksBlock />

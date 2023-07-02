@@ -18,7 +18,7 @@ h1.AppLogo {
 
 div.AppHeaderLinksBlock {
   align-items: center;
-  width: 40%;
+  width: 45%;
   display: flex;
   justify-content: right;
 }
@@ -73,6 +73,11 @@ li.AppHeaderLink > a {
 
   div.AppLogoBlock {
     flex: 50%;
+  }
+
+  div.AppChangeTheme {
+    width: 10%;
+    justify-content: left;
   }
 
   div.AppHamburgerMenu {

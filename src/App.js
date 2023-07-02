@@ -1,30 +1,24 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-
-import Header from "./components/Header";
-import MainPage from "./pages/MainPage";
-import CVPage from "./pages/CVPage";
-import NotFoundPage from "./pages/NotFoundPage";
-import ProjectsPage from "./pages/ProjectsPage";
-import SupportPage from "./pages/SupportPage";
-import ProjectPage from "./pages/ProjectPage";
 import { Suspense } from "react";
 import OnLoadComponent from "./components/OnLoad";
+import { useSelector } from "react-redux";
+
+import AppRoutes from "./routes";
+import { DarkTheme, LigthTheme } from "./utils/globalStyles";
+
+import "./styles/App.css";
 
 function App() {
+  const theme = useSelector((state) => state.style.theme);
+
   return (
     <Suspense fallback={<OnLoadComponent />}>
+      {theme === "ligth" ? (
+        <LigthTheme />
+      ) : theme === "dark" ? (
+        <DarkTheme />
+      ) : null}
       <div className="App">
-        <BrowserRouter>
-          <Header />
-          <Routes>
-            <Route path="*" element={<NotFoundPage />} />
-            <Route index path="/" element={<MainPage />} />
-            <Route path="/resume" element={<CVPage />} />
-            <Route path="/projects" element={<ProjectsPage />} />
-            <Route path="/support" element={<SupportPage />} />
-            <Route path="/project/:projectId" element={<ProjectPage />} />
-          </Routes>
-        </BrowserRouter>
+        <AppRoutes />
       </div>
     </Suspense>
   );
