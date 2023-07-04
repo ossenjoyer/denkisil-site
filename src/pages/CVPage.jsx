@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
-import "../styles/MainPage.css";
 import { useTranslation } from "react-i18next";
+
+import "../styles/MainPage.css";
 
 export default function CVPage() {
   const { i18n } = useTranslation();

@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 
 export default function ProjectPage({ match }) {
   const { projectId } = useParams();
+
   const { i18n } = useTranslation();
 
   const project = projects[i18n.language][projectId];

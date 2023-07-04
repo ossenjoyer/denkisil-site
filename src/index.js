@@ -4,16 +4,19 @@ import ReactDOM from "react-dom/client";
 import React from "react";
 
 import App from "./App";
-import Store from "./store/index";
+import { Store, Persistor } from "./store/index";
 import i18n from "./utils/i18n";
 
 import "./styles/index.css";
+import { PersistGate } from "redux-persist/integration/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Provider store={Store}>
-      <App />
+      <PersistGate persistor={Persistor}>
+        <App />
+      </PersistGate>
     </Provider>
   </React.StrictMode>
 );

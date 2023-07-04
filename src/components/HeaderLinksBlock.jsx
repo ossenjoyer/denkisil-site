@@ -1,12 +1,16 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { useSelector, useDispatch } from "react-redux";
+import { changeAppLanguage } from "../store/languageSlice";
 import { darkTheme, ligthTheme } from "../store/themeSlice";
+
+import ligthThemeIcon from "../icons/ligth-theme.svg";
+import darkThemeIcon from "../icons/dark-theme.svg";
 
 export default function HeaderLinksBlock() {
   const { i18n } = useTranslation();
+
   const theme = useSelector((state) => state.style.theme);
-  console.log(theme);
   const dispatch = useDispatch();
 
   function changeTheme() {
@@ -26,13 +30,25 @@ export default function HeaderLinksBlock() {
         <Link to={`/support`} className="AppHeaderLink">
           {i18n.t("Header.Links.Support")}
         </Link>
-        <a href="#" className="AppHeaderLink" onClick={() => changeTheme()}>
-          {i18n.t("Header.Links.ChangeTheme")}
-        </a>
+        <div className="AppHeaderBlock" onClick={() => changeTheme()}>
+          <img
+            src={
+              theme === "ligth"
+                ? darkThemeIcon
+                : theme === "dark"
+                ? ligthThemeIcon
+                : null
+            }
+            width={`32px`}
+            height={`32px`}
+            alt={i18n.t("Header.Links.ChangeTheme")}
+          />
+        </div>
         <div className="AppHeaderBlock">
           <select
             value={i18n.language}
             onChange={(e) => {
+              dispatch(changeAppLanguage(e.target.value));
               i18n.changeLanguage(e.target.value);
             }}
           >

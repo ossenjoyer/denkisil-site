@@ -1,92 +1,94 @@
 div.AppMainPageContent {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 5%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5%;
 }
 
 div.AppMainPageBanner {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-    padding: 3%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding: 3%;
 }
 
 div.AppMainPageLeftContentBox {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-    padding: 3%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: left;
+  padding: 3%;
 }
 
 div.AppMainPageCenterContentBox {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding: 3%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 3%;
 }
 
 div.AppMainPageRightContentBox {
-    width: 100%;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: right;
-    padding: 3%;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: right;
+  padding: 3%;
 }
 
-div.AppMainPageAlignHelper  {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: calc(100% / 3);
-    padding: 3%;
+div.AppMainPageAlignHelper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center !important;
+  width: calc(100% / 3);
+  padding: 3%;
 }
 
 div.AppMainPageAlignHelperAll {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    width: 100%;
-    padding: 3%;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: 100%;
+  padding: 3%;
 }
 
 ul.AppMainPageContactsList {
-    display: flex;
-    flex-direction: column;
-    text-decoration: unset;
-    align-items: center;
+  display: flex;
+  width: 100%;
+  padding-left: 0;
+  flex-direction: column;
+  text-decoration: unset;
+  align-items: center;
 }
 
 ul.AppMainPageContactsList > li {
-    align-items: center;
-    display: flex;
+  align-items: center;
+  display: flex;
 }
 
 .AppMainPageProjectPreview {
-    height: 60%;
-    width: 60%;
+  height: 60%;
+  width: 60%;
 }
 
 @media screen and (max-width: 800px) {
-    
-    div.AppMainPageBanner {
-        justify-content: center;
-    }
+  div.AppMainPageBanner {
+    justify-content: center;
+  }
 
-    div.AppMainPageRightContentBox,
-    div.AppMainPageLeftContentBox {
-        justify-content: center;
-    }
+  div.AppMainPageRightContentBox,
+  div.AppMainPageLeftContentBox {
+    justify-content: center;
+  }
 
-    div.AppMainPageAlignHelper {
-        width: 80%;
-        padding: 7%;
-    }
+  div.AppMainPageAlignHelper {
+    width: 80%;
+    padding: 7%;
+  }
 
-    .AppMainPageProjectPreview {
-        width: 80%;
-        height: 80%;
-    }
+  .AppMainPageProjectPreview {
+    width: 80%;
+    height: 80%;
+  }
 }

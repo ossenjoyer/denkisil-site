@@ -1,7 +1,9 @@
+import { useTranslation } from "react-i18next";
+
 import telegramIcon from "../icons/telegram.svg";
 import githubIcon from "../icons/github.svg";
+
 import "../styles/MainPage.css";
-import { useTranslation } from "react-i18next";
 
 export default function MainPage() {
   const { i18n } = useTranslation();
@@ -41,7 +43,6 @@ export default function MainPage() {
               <img alt="GitHub" src={githubIcon} />
               <a href="https://github.com/denkisil">denkisil</a>
             </li>
-            <li></li>
           </ul>
         </div>
       </div>
