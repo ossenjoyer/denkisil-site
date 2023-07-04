@@ -23,7 +23,7 @@ export default function MainPage() {
           <h1>{i18n.t("MainPage.AboutMeBanner.Title")}</h1>
 
           <ul>
-            <li>{i18n.t("MainPage.AboutMeBanner.List.0")}e</li>
+            <li>{i18n.t("MainPage.AboutMeBanner.List.0")}</li>
             <li>{i18n.t("MainPage.AboutMeBanner.List.1")}</li>
             <li>{i18n.t("MainPage.AboutMeBanner.List.2")}</li>
             <li>{i18n.t("MainPage.AboutMeBanner.List.3")}</li>
