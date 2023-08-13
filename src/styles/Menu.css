@@ -1,0 +1,19 @@
+.Menu {
+  user-select: none;
+  background: #e6efe9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  width: 30%;
+  height: 100%;
+  flex: 30%;
+  left: 0%;
+  top: 0%;
+}
+
+.CurrPageName {
+  font-weight: 500;
+  font-size: 48px;
+}
