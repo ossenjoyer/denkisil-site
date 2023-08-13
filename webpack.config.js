@@ -11,7 +11,7 @@ module.exports = {
   entry: "./src/index.tsx",
   target: "web",
   output: {
-    path: __dirname + "/dist/"
+    path: __dirname + "/build/"
   },
   resolve: {
     modules: [__dirname, "src", "node_modules"]
