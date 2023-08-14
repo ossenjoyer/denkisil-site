@@ -11,6 +11,7 @@ module.exports = {
   entry: "./src/index.tsx",
   target: "web",
   output: {
+    filename: "main.[hash].js",
     path: __dirname + "/build/"
   },
   resolve: {
