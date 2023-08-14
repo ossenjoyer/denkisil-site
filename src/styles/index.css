@@ -1,6 +1,7 @@
 body {
   background: #fff0f4;
   font-family: Ubuntu;
+  user-select: none;
 }
 
 .AppContent {
@@ -21,4 +22,15 @@ h6 {
 
 a {
   color: #6b4dbe;
+}
+
+#OpenMenu {
+  display: none;
+  align-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  #OpenMenu {
+    display: flex;
+  }
 }

@@ -1,0 +1,10 @@
+{
+  "Menu": {
+    "Links": {
+      "MainPage": "Головна",
+      "CVPage": "CV",
+      "ProjectsPage": "Проєкти",
+      "SupportPage": "Підтримати"
+    }
+  }
+}

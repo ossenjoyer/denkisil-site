@@ -1,0 +1,10 @@
+{
+  "Menu": {
+    "Links": {
+      "MainPage": "Main Page",
+      "CVPage": "CV",
+      "ProjectsPage": "Projects",
+      "SupportPage": "Support"
+    }
+  }
+}

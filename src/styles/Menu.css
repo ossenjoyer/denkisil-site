@@ -3,12 +3,10 @@
   background: #e6efe9;
   display: flex;
   align-items: center;
-  justify-content: center;
   flex-direction: column;
   position: fixed;
   width: 30%;
   height: 100%;
-  flex: 30%;
   left: 0%;
   top: 0%;
 }
@@ -16,4 +14,24 @@
 .CurrPageName {
   font-weight: 500;
   font-size: 48px;
+}
+
+.MenuHeader {
+  padding: 4%;
+  width: 70%;
+  display: none;
+  flex-direction: row wrap;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  .Menu {
+    width: 100%;
+    z-index: 99;
+    display: none;
+  }
+
+  .MenuHeader {
+    display: flex;
+  }
 }

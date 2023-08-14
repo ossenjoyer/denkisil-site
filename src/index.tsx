@@ -5,6 +5,8 @@ import App from "./App";
 
 import "@styles/index.css";
 
+import "./i18n/";
+
 window.React = React;
 
 const rootEl = document.getElementById("root") as HTMLElement;

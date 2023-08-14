@@ -1,5 +1,4 @@
 .AppMainPageContent {
-  flex: 65%;
   width: 100%;
   display: flex;
   margin-left: 30%;
@@ -12,4 +11,10 @@
   display: flex;
   flex-direction: column;
   justify-content: left;
+}
+
+@media screen and (max-width: 800px) {
+  .AppMainPageContent {
+    margin: 0;
+  }
 }
