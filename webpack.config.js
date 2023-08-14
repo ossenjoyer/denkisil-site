@@ -45,11 +45,10 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.join(__dirname, "/public/locales"),
-          to: path.join(__dirname, "/build/locales")
-        },
-        {
-          from: path.join(__dirname, "/public/favico.ico"),
+          from: path.join(__dirname, "/public"),
+          globOptions: {
+            ignore: ["**/index.html"]
+          },
           to: path.join(__dirname, "/build")
         }
       ]
