@@ -45,11 +45,16 @@ module.exports = {
     new CopyPlugin({
       patterns: [
         {
-          from: path.join(__dirname, "/public"),
+          from: path.join(__dirname, "/public/locales"),
+          to: path.join(__dirname, "/build/locales")
+        },
+        {
+          from: path.join(__dirname, "/public/favico.ico"),
           to: path.join(__dirname, "/build")
         }
       ]
-    })
+    }),
+    new HtmlWebpackPlugin()
   ],
   resolve: {
     plugins: [new TSPathsWebpackPlugin()]
