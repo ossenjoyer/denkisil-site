@@ -9,6 +9,6 @@ i18next
   .init({
     lng: "en",
     backend: {
-      locationPath: path.resolve("locals/{{lng}}/translation.json")
+      locationPath: "locals/{{lng}}/translation.json"
     }
   });
