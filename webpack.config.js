@@ -41,9 +41,6 @@ module.exports = {
   },
   devtool: false,
   plugins: [
-    new HtmlWebpackPlugin({
-      template: "public/index.html"
-    }),
     new MiniCssExtractPlugin(),
     new CopyPlugin({
       patterns: [
