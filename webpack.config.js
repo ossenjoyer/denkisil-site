@@ -53,7 +53,9 @@ module.exports = {
         }
       ]
     }),
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, "/public/index.html")
+    })
   ],
   resolve: {
     plugins: [new TSPathsWebpackPlugin()]
