@@ -1,7 +1,7 @@
 const prod = process.env.NODE_ENV === "production";
 
 const path = require("path");
-const nodeExternals = require("webpack-node-externals");
+const CopyPlugin = require("copy-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const TSPathsWebpackPlugin = require("tsconfig-paths-webpack-plugin");
@@ -43,7 +43,15 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: "public/index.html"
     }),
-    new MiniCssExtractPlugin()
+    new MiniCssExtractPlugin(),
+    new CopyPlugin({
+      patterns: [
+        {
+          from: path.join(__dirname, "/public"),
+          to: path.join(__dirname, "/build")
+        }
+      ]
+    })
   ],
   resolve: {
     plugins: [new TSPathsWebpackPlugin()]
