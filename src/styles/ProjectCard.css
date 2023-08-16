@@ -1,0 +1,23 @@
+.ProjectsBoard {
+  padding: 2%;
+  width: 100%;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
+
+.ProjectCard {
+  padding: 4%;
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 45px;
+}
+
+@media (max-width: 800px) {
+  .ProjectsBoard {
+    padding: 10%;
+  }
+}

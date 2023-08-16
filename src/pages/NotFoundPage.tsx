@@ -5,13 +5,13 @@ import "@styles/MainPage.css";
 
 export default function NotFoundPage() {
   return (
-    <div className="AppMainPageContent">
+    <>
       <div className="AppContentBox">
         <h1>Current page not found</h1>
         <p>
           You can return to <Link to={`/`}>main</Link>
         </p>
       </div>
-    </div>
+    </>
   );
 }

@@ -1,7 +1,7 @@
 import "@styles/Button.css";
 
 export interface ButtonProps {
-  id: string;
+  id?: string;
   title: string;
   active?: boolean;
   onClick?: (...args: any[]) => any;
