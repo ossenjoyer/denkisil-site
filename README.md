@@ -2,7 +2,7 @@
 
 ## About
 
-This is my first project on React
+This is my site where you can find more information about me as a developer
 
 ## Setup
 
