@@ -1,0 +1,49 @@
+{
+  "aid": {
+    "en": [
+      {
+        "name": "National Bank of Ukraine (Support for AFU)",
+        "link": "https://bank.gov.ua/en/about/support-the-armed-forces/"
+      },
+      {
+        "name": "National Bank of Ukraine (Humanitarian Aid)",
+        "link": "https://bank.gov.ua/en/about/humanitarian-aid-to-ukraine/"
+      },
+      {
+        "name": "UNITED24",
+        "link": "https://u24.gov.ua"
+      },
+      {
+        "name": "Ukrainian Red Cross Society",
+        "link": "https://redcross.org.ua/en/"
+      },
+      {
+        "name": "Come Back Alive",
+        "link": "https://safelife.in.ua/en"
+      }
+    ],
+    "uk": [
+        {
+            "name": "Національний банк України (Підтримка ЗСУ)",
+            "link": "https://bank.gov.ua/ua/about/support-the-armed-forces/"
+        },
+        {
+            "name": "Національний банк України (Гуманітарна допомога)",
+            "link": "https://bank.gov.ua/ua/about/humanitarian-aid-to-ukraine"
+        },
+        {
+            "name": "UNITED24",
+            "link": "https://u24.gov.ua"
+        },
+        {
+            "name": "Український Червоний Хрест",
+            "link": "https://redcross.org.ua"
+        },
+        {
+            "name": "ГО \"Повернись живим\"",
+            "link": "https://safelife.in.ua"
+        }
+
+    ]
+  }
+}

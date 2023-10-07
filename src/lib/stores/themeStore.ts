@@ -3,14 +3,14 @@ import { writable } from "svelte/store";
 
 const createThemeStore = () => {
   const { subscribe, set } = persist(
-    writable("light"),
+    writable(false),
     createLocalStorage(),
     "theme",
   );
 
   return {
     subscribe,
-    toggle: (themeChanged: boolean) => set(themeChanged ? "dark" : "light"),
+    toggle: (themeChanged: boolean) => set(themeChanged),
   };
 };
 

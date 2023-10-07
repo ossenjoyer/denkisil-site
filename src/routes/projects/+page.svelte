@@ -1,7 +1,7 @@
 <script>
     import { _ } from "svelte-i18n";
 
-    import ProjectCard from "../../components/Project/ProjectCard.svelte";
+    import ProjectCard from "../../components/ProjectCard/ProjectCard.svelte";
     import projects from "$lib/data/projects.json";
     import "$lib/styles/Page.css";
 </script>

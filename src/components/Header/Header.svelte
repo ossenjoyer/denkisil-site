@@ -6,11 +6,12 @@
     import { fade } from "svelte/transition";
     import { theme } from "$lib/stores/themeStore";
     import { _ } from "svelte-i18n";
+    import {browser} from "$app/environment";
 
     let themeChanged = false;
 </script>
 
-<div class="Header {$theme === 'dark' ? 'dark' : 'light'}">
+<div class="Header {$theme ? 'dark' : 'light'}">
     <div class="HeaderLogo">
         <h1>DenKisil</h1>
     </div>
@@ -27,14 +28,13 @@
                 on:click={() => {
                     themeChanged = !themeChanged;
                     theme.toggle(themeChanged);
-
+                    if (browser) {
+                        window.document.body.classList.remove($theme ? 'light' : 'dark');
+                        window.document.body.classList.add($theme ? 'dark' : 'light');
+                    }
                 }}
                 transition:fade>
-            <img
-                alt="change theme"
-                src={$theme === "dark" ? lightThemeIcon : darkThemeIcon}
-                width="64px"
-            />
+            <img src={$theme ? lightThemeIcon : darkThemeIcon} alt={$_("Header.ThemeIconAlt")} width="64px"/>
         </button>
     </div>
 </div>

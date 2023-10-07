@@ -43,6 +43,22 @@
         "Title": "My projects",
         "Description": "Here you can see my projects"
       }
+    },
+    "Support": {
+      "WelcomeBanner": {
+        "Title": "There some options to support me",
+        "Description": "I don't have any donation service, but i have some variants for you"
+      },
+      "SupportUkraineBanner": {
+        "Title": "The most important support is to help my homeland, which is going through difficult times",
+        "Description": "There some links to Ukrainian government programs and funds, which help Ukraine"
+      }
+    },
+    "Error": {
+      "NotFound": {
+        "Title": "Сторінку не знайдено",
+        "Description": "Сторінку, яку ви шукаєте, не знайдено. Ви можете зв'язатись зі мною, якщо ви впенені, що тут має бути сторінка"
+      }
     }
   }
 }
