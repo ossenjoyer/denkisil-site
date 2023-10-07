@@ -29,6 +29,6 @@
 	"type": "module",
 	"dependencies": {
 		"@macfja/svelte-persistent-store": "^2.4.0",
-		"svelte-i18n": "^3.7.4"
+		"svelte-i18n": "3.7.3-0"
 	}
 }
