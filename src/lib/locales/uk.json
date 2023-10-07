@@ -1,0 +1,48 @@
+{
+  "StillInProgress": "У процесі...",
+  "Header": {
+    "Links": {
+      "Home": "Головна",
+      "CV": "Резюме",
+      "Projects": "Проєкти",
+      "Support": "Підтримати мене"
+    }
+  },
+  "Pages": {
+    "Main": {
+      "WelcomeBanner": {
+        "Title": "Ласкаво прошу до мого сайту!",
+        "Description": "Тепер перероблений на SvelteKit!"
+      },
+      "AboutBanner": {
+        "Title": "Трохи фактів про мене",
+        "Facts": [
+          "Мені 16 років",
+          "Народився і проживаю в Україні",
+          "Вивчаю програмування з 2019 року",
+          "Хочу розробляти мобільні та настільні застосунки",
+          "Мені подобається електронна музика, а саме жанри Phonk, Dubstep та Electro House"
+        ]
+      },
+      "ContactsBanner": {
+        "Title": "Зв'язатись зі мною можна через:"
+      }
+    },
+    "CV": {
+      "CVBanner": {
+        "Title": "CV"
+      },
+      "PortfolioBanner": {
+        "Title": "Портфоліо",
+        "Description": "Ви можете побачити на сторінці проєктів"
+      }
+    },
+    "Projects": {
+      "VisitGithubPage": "Перейти на GitHub",
+      "WelcomeBanner": {
+        "Title": "Мої проєкти",
+        "Description": "Тут ви можете побачити всі мої проєкти"
+      }
+    }
+  }
+}

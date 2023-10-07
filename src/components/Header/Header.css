@@ -1,0 +1,84 @@
+.dark {
+    background-color: #1c1a1a;
+    color: #fff;
+}
+
+.light {
+    background-color: #fff;
+    color: #000;
+}
+
+.Header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+    position: sticky;
+    top: 0;
+    opacity: revert;
+}
+
+.HeaderLogo {
+    user-select: none;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+}
+
+.HeaderLinks {
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.HeaderLinksNav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.HeaderLinksNav>li {
+    display: flex;
+    padding: 0 3% 0 3%;
+}
+
+.HeaderPreferences {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 5% 0 5%;
+}
+
+.ChangeThemeButton {
+    height: 20%;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    user-select: none;
+    user-modify: none;
+}
+
+
+@media screen and (max-width: 800px) {
+    .Header {
+        flex-direction: column;
+    }
+
+    .HeaderLinks {
+        flex-direction: column;
+    }
+
+    .HeaderPreferences {
+        margin-top: 3%;
+    }
+}

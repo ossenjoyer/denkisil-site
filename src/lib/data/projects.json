@@ -1,0 +1,20 @@
+{
+  "projects": [
+    {
+      "name": "Feedrum",
+      "githubLink": "https://github.com/Feedrum-Project",
+      "description": {
+        "en": "Feedrum is a social network for developers. It is a place where you can share your ideas, projects, and thoughts with other developers. You can also find new friends and teammates for your projects.",
+        "uk": "Feedrum - це соціальна мережа для розробників. Це місце, де ви можете ділитися своїми ідеями, проєктами та думками з іншими розробниками. Ви також можете знайти нових друзів та команду для своїх проектів."
+      }
+    },
+    {
+      "name": "CCDB",
+      "githubLink": "https://github.com/denkisil/ccdb",
+      "description": {
+        "en": "CCDB is a JSON-based storage tool, created for simplest data storage.",
+        "uk": "CCDB - це інструмент для зберігання даних на основі JSON, створений для найпростішого зберігання даних."
+      }
+    }
+  ]
+}

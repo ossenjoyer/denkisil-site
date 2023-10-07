@@ -1,0 +1,7 @@
+.ProjectCard {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 4% 0 4.5% 4.5%;
+}

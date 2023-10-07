@@ -1,0 +1,48 @@
+{
+  "StillInProgress": "Still in progress...",
+  "Header": {
+    "Links": {
+      "Home": "Home",
+      "CV": "CV",
+      "Projects": "Projects",
+      "Support": "Support"
+    }
+  },
+  "Pages": {
+    "Main": {
+      "WelcomeBanner": {
+        "Title": "Welcome to my website!",
+        "Description": "Now redesigned with SvelteKit"
+      },
+      "AboutBanner": {
+        "Title": "Some facts about me",
+        "Facts": [
+          "I'm 16 years old",
+          "Born and live in Ukraine",
+          "Learn programming since 2019",
+          "Wanna develop desktop and mobile apps",
+          "I like electronic music, especially phonk, dubstep and electro house"
+        ]
+      },
+      "ContactsBanner": {
+        "Title": "You can contact me via"
+      }
+    },
+    "CV": {
+      "CVBanner": {
+        "Title": "CV"
+      },
+      "PortfolioBanner": {
+        "Title": "Portfolio",
+        "Description": "You can see on projects page"
+      }
+    },
+    "Projects": {
+      "VisitGithubPage": "Visit GitHub page",
+      "WelcomeBanner": {
+        "Title": "My projects",
+        "Description": "Here you can see my projects"
+      }
+    }
+  }
+}
