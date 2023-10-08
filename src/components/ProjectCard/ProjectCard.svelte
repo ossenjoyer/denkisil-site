@@ -2,9 +2,13 @@
   import {get} from "svelte/store";
   import { _, locale } from "svelte-i18n";
 
-  export let project: { name: string, githubLink: string, description: { [name: string]: string } }
+  export let project: { name: string, githubLink: string, description: { "en": string, "uk": string } }
 
-  const description = project.description[get(locale)!]
+  const {en, uk} = project.description
+
+  console.log(get(locale))
+
+  const description = get(locale) === "uk" || get(locale) === "uk-UA" ? uk : en;
 </script>
 
 <div class="ProjectCard">

@@ -5,7 +5,9 @@
     import "$lib/styles/Page.css";
     import {get} from "svelte/store";
 
-    const aidList = aid.aid[get(locale)];
+    const { en, uk } = aid.aid;
+
+    const aidList = get(locale) === "uk" || get(locale) === "uk-UA" ? uk : en;
 </script>
 
 <div class="Page">
