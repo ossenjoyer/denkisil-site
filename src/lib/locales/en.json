@@ -42,6 +42,10 @@
       "WelcomeBanner": {
         "Title": "My projects",
         "Description": "Here you can see my projects"
+      },
+      "NoProjectsHere": {
+        "Title": "No projects here",
+        "Description": "I don't have any projects here yet"
       }
     },
     "Support": {
@@ -56,8 +60,8 @@
     },
     "Error": {
       "NotFound": {
-        "Title": "Сторінку не знайдено",
-        "Description": "Сторінку, яку ви шукаєте, не знайдено. Ви можете зв'язатись зі мною, якщо ви впенені, що тут має бути сторінка"
+        "Title": "Page not found",
+        "Description": "The page you are looking for does not exist or has been deleted."
       }
     }
   }

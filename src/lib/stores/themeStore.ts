@@ -5,7 +5,7 @@ const createThemeStore = () => {
   const { subscribe, set } = persist(
     writable(false),
     createLocalStorage(),
-    "theme",
+    "theme"
   );
 
   return {
