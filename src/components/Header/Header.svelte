@@ -1,7 +1,5 @@
 <script lang="ts">
   import "./Header.css";
-  import darkThemeIcon from "$lib/images/dark-theme.svg";
-  import lightThemeIcon from "$lib/images/light-theme.svg";
 
   import { images } from "../Images/index";
 
@@ -9,8 +7,6 @@
   import { theme } from "$lib/stores/themeStore";
   import { _ } from "svelte-i18n";
   import { browser } from "$app/environment";
-
-  let themeChanged = false;
 </script>
 
 <div class="Header {$theme ? 'dark' : 'light'}">
@@ -33,9 +29,8 @@
     <button
       class="ChangeThemeButton"
       on:click={() => {
-        themeChanged = !themeChanged;
-        theme.toggle(themeChanged);
         if (browser) {
+          theme.toggle();
           window.document.body.classList.remove($theme ? "light" : "dark");
           window.document.body.classList.add($theme ? "dark" : "light");
         }

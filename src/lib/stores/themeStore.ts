@@ -1,16 +1,21 @@
 import { persist, createLocalStorage } from "@macfja/svelte-persistent-store";
 import { writable } from "svelte/store";
 
+let themeChanged: boolean = false;
+
 const createThemeStore = () => {
   const { subscribe, set } = persist(
-    writable(false),
+    writable(themeChanged),
     createLocalStorage(),
     "theme"
   );
 
   return {
     subscribe,
-    toggle: (themeChanged: boolean) => set(themeChanged),
+    toggle: () => {
+      themeChanged = !themeChanged;
+      return set(!themeChanged);
+    },
   };
 };
 

@@ -1,87 +1,86 @@
 .dark {
-    background-color: #1c1a1a;
-    color: #fff;
+  background-color: #1c1a1a;
+  color: #fff;
 }
 
 .light {
-    background-color: #fff;
-    color: #000;
+  background-color: #fff;
+  color: #000;
 }
 
 .Header {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
 }
 
 .HeaderLogo {
-    user-select: none;
-    display: flex;
-    width: 20%;
-    justify-content: center;
+  user-select: none;
+  display: flex;
+  width: 20%;
+  justify-content: center;
 }
 
 .HeaderLinks {
-    width: 80%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .HeaderLinksNav {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-.HeaderLinksNav>li {
-    display: flex;
-    padding: 0 3% 0 3%;
+.HeaderLinksNav > li {
+  display: flex;
+  padding: 0 3% 0 3%;
 }
 
 .HeaderPreferences {
-    height: 100%;
-    width: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 5% 0 5%;
+  height: 100%;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 5% 0 5%;
 }
 
 .ChangeThemeButton {
-    height: 20%;
-    background: none;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    user-select: none;
-    user-modify: none;
+  height: 20%;
+  background: none;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  user-select: none;
 }
 
-
 @media screen and (max-width: 800px) {
-    .Header {
-        width: 100%;
-        flex-direction: column;
-        margin-left: 7%;
-    }
+  .Header {
+    width: 100%;
+    flex-direction: column;
+    margin-left: 7%;
+  }
 
-    .HeaderLogo, .HeaderPreferences {
-        width: 100%;
-    }
+  .HeaderLogo,
+  .HeaderPreferences {
+    width: 100%;
+  }
 
-    .HeaderLinks {
-        width: 100%;
-        flex-direction: column;
-    }
+  .HeaderLinks {
+    width: 100%;
+    flex-direction: column;
+  }
 
-    .HeaderPreferences {
-        margin-top: 3%;
-    }
+  .HeaderPreferences {
+    margin-top: 3%;
+  }
 }

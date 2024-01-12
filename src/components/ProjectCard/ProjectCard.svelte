@@ -5,6 +5,7 @@
   export let project: {
     name: string;
     githubLink: string;
+    previewLink?: string;
     description: { en: string; uk: string };
   };
 

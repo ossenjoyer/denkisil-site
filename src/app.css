@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
 
 body, html {
     display: flex;
@@ -7,7 +7,7 @@ body, html {
     align-items: center;
     padding: 0;
     margin: 0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Ubuntu Mono', monospace;
     width: 100%;
     height: auto;
 }

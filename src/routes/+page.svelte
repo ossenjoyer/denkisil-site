@@ -2,13 +2,12 @@
   import { _ } from "svelte-i18n";
 
   import contacts from "$lib/data/contacts.json";
-  import discord from "$lib/images/discord.svg";
-  import github from "$lib/images/github.svg";
   import { images } from "../components/Images";
+  import { json } from "svelte-i18n";
+
+  const facts: Array<string> = $json("Pages.Main.AboutBanner.Facts") as Array<string>;
 
   import "$lib/styles/Page.css";
-
-  //   let images = { discord, github };
 </script>
 
 <div class="Page">
@@ -22,7 +21,7 @@
     <div class="PageContentBoard">
       <h1>{$_("Pages.Main.AboutBanner.Title")}</h1>
       <ul>
-        {#each Object.values($_("Pages.Main.AboutBanner.Facts")) as fact}
+        {#each facts as fact}
           <li>{fact}</li>
         {/each}
       </ul>
