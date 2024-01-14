@@ -1,11 +1,14 @@
 <script lang="ts">
   import { fade, fly } from "svelte/transition";
+
   import Header from "../components/Header/Header.svelte";
+  import Footer from "../components/Footer/Footer.svelte";
+
+  import { browser } from "$app/environment";
   import { theme } from "$lib/stores/themeStore";
+  import "$lib/styles/Page.css";
 
   import "../app.css";
-  import "$lib/styles/Page.css";
-  import { browser } from "$app/environment";
 
   if (browser) {
     window.document.body.classList.add($theme ? "dark" : "light");
@@ -23,3 +26,4 @@
     <slot />
   </div>
 {/key}
+<Footer />

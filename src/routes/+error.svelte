@@ -1,5 +1,6 @@
 <script>
   import { _ } from "svelte-i18n";
+
   import "$lib/styles/Page.css";
 </script>
 

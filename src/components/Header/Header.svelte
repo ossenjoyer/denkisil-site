@@ -1,12 +1,13 @@
 <script lang="ts">
-  import "./Header.css";
+  import { fade } from "svelte/transition";
+  import { _ } from "svelte-i18n";
+
+  import { theme } from "$lib/stores/themeStore";
+  import { browser } from "$app/environment";
 
   import { images } from "../Images/index";
 
-  import { fade } from "svelte/transition";
-  import { theme } from "$lib/stores/themeStore";
-  import { _ } from "svelte-i18n";
-  import { browser } from "$app/environment";
+  import "./Header.css";
 </script>
 
 <div class="Header {$theme ? 'dark' : 'light'}">

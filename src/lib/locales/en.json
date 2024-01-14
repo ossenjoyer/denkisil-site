@@ -16,6 +16,7 @@
       },
       "AboutBanner": {
         "Title": "Some facts about me",
+        "Description": "My name is Denis and I am 17 years old.<br />I've been interested in programming since school, and I've participated in computer science and programming competitions many times.<br />Now I'm learning TypeScript and Java because I want to develop web and desktop applications.<br />Apart from programming, I like to listen to music, usually electronic music (my favorite genres are Dubstep, Phonk, Phunk, Electro House)",
         "Facts": [
           "I'm 16 years old",
           "Born and live in Ukraine",
