@@ -1,7 +1,38 @@
 .ProjectCard {
-  width: 90%;
   display: flex;
-  flex-direction: row;
-  justify-content: left;
-  margin: 4% 0 4.5% 4.5%;
+  flex-direction: column;
+  align-content: left;
+  border-radius: 15px;
+  padding: 40px;
+  margin: 25px 0;
+}
+
+.border-dark {
+  border: 4px solid #000;
+}
+
+.border-light {
+  border: 4px solid #fff;
+}
+
+.ProjectCard h2 {
+  margin: 0;
+}
+
+.ProjectCard a {
+  display: block;
+  margin: 10px 0;
+}
+
+.ProjectCard h1,
+.ProjectCard h2,
+.ProjectCard h3,
+.ProjectCard h4,
+.ProjectCard h5,
+.ProjectCard h6 {
+  text-align: left;
+}
+
+.ProjectCard p {
+  text-align: left;
 }

@@ -11,7 +11,7 @@
   <ul class="ContactLinks">
     {#each contactLinks.contacts as contactLink}
       <li class="ContactLink">
-        <a href={contactLink.link}>
+        <a href={contactLink.link} aria-label={contactLink.name}>
           <svelte:component this={images.get(contactLink.name)} />
           {contactLink.name}
         </a>

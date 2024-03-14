@@ -14,7 +14,7 @@ const createThemeStore = () => {
     subscribe,
     toggle: () => {
       themeChanged = !themeChanged;
-      return set(!themeChanged);
+      return set(themeChanged);
     },
   };
 };

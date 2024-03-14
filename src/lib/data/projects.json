@@ -1,1 +1,13 @@
-{}
+{
+  "projects": [
+    {
+      "name": "Denkisil's Site",
+      "github_url": "https://github.com/ossenjoyer/denkisil-site",
+      "live_url": "https://denkisil.me",
+      "description": {
+        "en": "My personal site built with SvelteKit.",
+        "ua": "Мій особистий сайт, побудований на SvelteKit."
+      }
+    }
+  ]
+}
